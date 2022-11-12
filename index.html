@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>
+        United Kingdom of Norway
+    </title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/fav.png">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+</head>
+
+<body> 
+        <nav>
+            <label class="logo">Homepage</label>
+            <ul>
+                <li>
+                    <a class="btn" onclick="openPopup()">About</a>
+                </li>
+                <li>
+                    <a href="mailto: kshitij199a@gmail.com">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="tourism.html">Tourism</a>
+                </li>
+                <li>
+                    <a href="funfacts.html">funfacts</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="grid-item">
+        <div class="card">
+            <img align="right" class="home-img" src="images/flagofnorway.png">
+            <div class="card-content">
+                <h1 class="card-header">
+                    NORWAY
+                </h1>
+                <p class="card-text">
+                    A country in Europe.
+                    One of the most beautiful countries in the world. Ranked 2nd according to the Human Development Index.
+                    Bordered by Russia and Finland. 
+                    Wanna know more? Click away!
+                </p>
+                <a href="knowmore.html" class="card-btn">
+                    Know more
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popup">
+        <h2>Kshitij Gudla</h2>
+        <p>I study in DAV Public school, Safilguda, Hyderabad
+            <br>
+            <br>
+            source code for this project 
+
+        </p>
+        <button onclick="closePopup()">ok</button>
+    </div>
+    <script>
+        let popup = document.getElementById('popup')
+        function openPopup(){
+            popup.classList.add("open-popup")
+        }
+
+        function closePopup(){
+            popup.classList.remove("open-popup")
+        }
+    </script>
+</body> 
+</body>
